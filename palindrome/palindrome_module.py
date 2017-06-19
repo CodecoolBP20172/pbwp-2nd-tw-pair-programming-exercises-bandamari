@@ -1,9 +1,15 @@
 def palindrome(str):
-    return
+    a = str.replace(" ", "").lower()
+    b = str.replace(" ", "").lower()[::-1]
+    if a == b:
+        return True
+    else:
+        return False
 
 
 def main():
-    return
+    x = input("Enter a palindrome:")
+    print(palindrome(x))
 
 
 if __name__ == '__main__':
